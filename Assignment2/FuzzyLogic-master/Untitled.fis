@@ -1,0 +1,39 @@
+[System]
+Name='Untitled'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Humidity'
+Range=[0 100]
+NumMFs=4
+MF1='Normal':'trapmf',[0 10 20 40]
+MF2='Medium':'trapmf',[30 40 50 60]
+MF3='High':'trapmf',[50 60 70 80]
+MF4='Very_High':'trapmf',[70 80 90 100]
+
+[Input2]
+Name='Temperature'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
+MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+
+[Output1]
+Name='Motor_Speed'
+Range=[0 1]
+NumMFs=3
+MF1='Motor_Speed':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
+MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+
+[Rules]
