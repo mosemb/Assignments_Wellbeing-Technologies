@@ -1,0 +1,1 @@
+In this repository i have some wellbeing technologies assignments, these basically have machine learning notebooks working on fuzzy logic. Some of the problems focussed on include among others include deeplearning problems using pytorch, classification problems, clustering using fuzzy logic.  
